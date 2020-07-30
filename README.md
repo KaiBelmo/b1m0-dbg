@@ -1,0 +1,11 @@
+- [x] parse elf file format
+- [x] trace syscalls
+- [x] step until syscalls
+- [x] single step
+- [x] info registers
+- [x] info memory
+- [ ] set registers 
+- [x] set breakpoints
+- [ ] break line
+- [ ] disassambler
+- [ ] no idea
