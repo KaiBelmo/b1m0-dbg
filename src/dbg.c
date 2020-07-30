@@ -49,27 +49,27 @@ void print_cmd(h_cmd *cmd){
 }
 
 int handle_cmd(char *cmd){
-	if(strncmp(cmd, "si", 2) == 0)
+	if(strncmp(cmd, "si", 2) == 0)			// single step
 			return 0;
-	else if(strncmp(cmd, "hs", 2) == 0)
+	else if(strncmp(cmd, "hs", 2) == 0)		// commands history
 			return 1;
-	else if(strncmp(cmd, "info", 4) == 0)
+	else if(strncmp(cmd, "info", 4) == 0)		// parse elf file (info file, info symbols, info section)
 			return 2;
-	else if((strncmp(cmd, "q", 2) == 0) )
+	else if((strncmp(cmd, "q", 2) == 0) )		// my fav command
 			return 3;
-	else if(strncmp(cmd,"regs", 4) == 0)
+	else if(strncmp(cmd,"regs", 4) == 0)		// dump all registers
 			return 4;
-	else if(strncmp(cmd, "c", 1) == 0)
+	else if(strncmp(cmd, "c", 1) == 0)		// continue execution
 			return 5;
-	else if(strncmp(cmd, "st", 2) == 0)
+	else if(strncmp(cmd, "st", 2) == 0)		// trace syscalls 
 			return 6;
-	else if(strncmp(cmd, "sy", 2) == 0)
+	else if(strncmp(cmd, "sy", 2) == 0)		// step to next syscalls
 			return 7;
-	else if(strncmp(cmd, "b", 1) == 0)
+	else if(strncmp(cmd, "b", 1) == 0)		// breakpoint 
 			return 8;
-	else if(strncmp(cmd, "print_bp", 8) == 0)
+	else if(strncmp(cmd, "print_bp", 8) == 0)	// print all breakpoints
 			return 9;
-	else if(strncmp(cmd, "mem", 2) == 0)
+	else if(strncmp(cmd, "mem", 2) == 0)		// print memory
 			return 10;
 	return -1;
 }
