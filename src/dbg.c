@@ -199,8 +199,11 @@ void set_ins(pid_t pid, unsigned long address, unsigned long instruction) {
 
 unsigned long long set_break_p(pid_t pid, unsigned long long address) {
     unsigned long long org = readfrom(pid, address);
-    unsigned long long int3 = (org & 0xFFFFFFFFFFFFFF00) | 0x00000000000000CC;
-    set_ins(pid, address, int3);
+	
+    unsigned long long bp = org;
+	// i'm too lazy todo some bitwise operations
+    ((char*)&bp)[0] = 0xcc;
+    set_ins(pid, address, bp);
     printf("Set breakpoint at %lx\n", address, readfrom(pid, address));
 	return org;
 }
