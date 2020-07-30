@@ -1,4 +1,4 @@
-- [x] parse elf file format
+- [x] elf file parser
 - [x] trace syscalls
 - [x] step until syscalls
 - [x] single step
