@@ -1,4 +1,4 @@
-#include "parser.h"
+#include "../inc/parser.h"
 
 void f_usage(char* argv){
 	printf("\tUsage: %s args\n", argv);
@@ -19,7 +19,9 @@ int	f_check(char* fileName){
 }
 
 int	f_check_elf(int32_t fd, Elf64_Ehdr *header){
-	read(fd, header->e_ident, sizeof(Elf64_Ehdr));
+	if (read(fd, header->e_ident, sizeof(Elf64_Ehdr)) == -1){
+		return -1;
+	}
     if	(header->e_ident[0]	==	ELFMAG0    &&
          header->e_ident[1]	==  ELFMAG1    &&
          header->e_ident[2]	==	ELFMAG2		&&
@@ -38,7 +40,7 @@ void info_header(Elf64_Ehdr header){
 	//read(fd, header.e_ident, 16);	
 	printf("\x1B[37;1mELF header:\n");
 	printf(" Magic number:\x1B[0m\t");
-	while(i <= 16){
+	while (i <= 16){
 		printf(" %02x", header.e_ident[i]);
 		i++;
 	}
@@ -130,5 +132,6 @@ void print_section(Elf64_Ehdr header, Elf64_Shdr* shdr, int fd){
 }
 
 void print_symbols(Elf64_Ehdr header, Elf64_Shdr* shdr, int fd){
+	(void)header; (void)shdr; (void)fd;
 	puts("!");
 }
