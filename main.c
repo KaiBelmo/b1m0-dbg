@@ -2,8 +2,8 @@
 	Spaghetti code!
 */
 
-#include "parser.h"
-#include "dbg.h"
+#include "inc/parser.h"
+#include "inc/dbg.h"
 
 struct user_regs_struct regs;
 h_cmd			*h_command = NULL;
@@ -14,14 +14,14 @@ int	main(int argc, char** argv){
 	Elf64_Ehdr	header;
 	Elf64_Shdr* shdr;
 
-	char 		 address[17];
+	char		 address[17];
 	char		 *prog;
 	int			 status = {0};
 	unsigned long long int break_address;
 	unsigned long long int instruction;
-	unsigned int addr = 0;
 	int32_t		 fd;
 	pid_t		 pid;
+	shdr = 0;
 
 	prog	= argv[1];
 	//prog = "asdf.out";
@@ -43,7 +43,7 @@ int	main(int argc, char** argv){
 			return -3;
 	}
 
-	pid	= fork();	
+	pid	= fork();
 	if (pid == -1){
 			perror ("fork");
 			return -4;
@@ -134,4 +134,3 @@ int	main(int argc, char** argv){
 
 	return 0;
 }
-
