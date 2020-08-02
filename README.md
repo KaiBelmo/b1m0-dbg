@@ -7,6 +7,5 @@
 - [ ] set registers 
 - [x] set breakpoints
 - [ ] break line
-- [ ] disassambler
 - [ ] hex dump
 - [ ] no idea
