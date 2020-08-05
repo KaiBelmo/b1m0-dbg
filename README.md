@@ -7,6 +7,5 @@
 - [x] set breakpoints
 - [ ] set registers 
 - [ ] info pid
-- [ ] break line
 - [ ] hex dump
 - [ ] no idea
