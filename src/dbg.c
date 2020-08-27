@@ -80,11 +80,11 @@ int handle_cmd(char *cmd){
 void info_regs(struct user_regs_struct *regs, pid_t pid){
 	printf("\n\x1B[37;1mPrint Registers:\x1B[0m\n\n");
 	printf("\x1B[37;1mRAX: \x1B[0m0x%llx \x1B[37;1mRBX: \x1B[0m0x%llx \x1B[37;1mRCX: \x1B[0m0x%llx \x1B[37;1mRDX: \x1B[0m0x%llx\n", regs->rax, regs->rbx, regs->rcx, regs->rdx);
-    printf("\x1B[37;1mR15: \x1B[0m0x%llx \x1B[37;1mR14: \x1B[0m0x%llx \x1B[37;1mR13: \x1B[0m0x%llx \x1B[37;1mR12: \x1B[0m0x%llx\n", regs->r15, regs->r14, regs->r13, regs->r12);
-    printf("\x1B[37;1mR11: \x1B[0m0x%llx \x1B[37;1mR10: \x1B[0m0x%llx \x1B[37;1mR9:  \x1B[0m0x%llx \x1B[37;1mR8:  \x1B[0m0x%llx\n", regs->r11, regs->r10, regs->r9, regs->r8);
-    printf("\x1B[37;1mRSP: \x1B[0m0x%llx \x1B[37;1mRBP: \x1B[0m0x%llx \x1B[37;1mRSI: \x1B[0m0x%llx \x1B[37;1mRDI: \x1B[0m0x%llx\n", regs->rsp, regs->rbp, regs->rsi, regs->rdi);
-    printf("\x1B[37;1mRIP: \x1B[0m0x%llx \x1B[37;1mCS:  \x1B[0m0x%llx \x1B[37;1mEFLAGS:\x1B[0m0x%llx\n",       regs->rip, regs->cs, regs->eflags);
-    printf("\x1B[37;1mSS:  \x1B[0m0x%llx \x1B[37;1mDS:  \x1B[0m0x%llx \x1B[37;1mES:  \x1B[0m0x%llx \x1B[37;1mFS:  \x1B[0m0x%llx \x1B[37;1mGS:  \x1B[0m0x%llx\n",regs->ss, regs->ds, regs->es, regs->fs, regs->gs);
+    	printf("\x1B[37;1mR15: \x1B[0m0x%llx \x1B[37;1mR14: \x1B[0m0x%llx \x1B[37;1mR13: \x1B[0m0x%llx \x1B[37;1mR12: \x1B[0m0x%llx\n", regs->r15, regs->r14, regs->r13, regs->r12);
+    	printf("\x1B[37;1mR11: \x1B[0m0x%llx \x1B[37;1mR10: \x1B[0m0x%llx \x1B[37;1mR9:  \x1B[0m0x%llx \x1B[37;1mR8:  \x1B[0m0x%llx\n", regs->r11, regs->r10, regs->r9, regs->r8);
+    	printf("\x1B[37;1mRSP: \x1B[0m0x%llx \x1B[37;1mRBP: \x1B[0m0x%llx \x1B[37;1mRSI: \x1B[0m0x%llx \x1B[37;1mRDI: \x1B[0m0x%llx\n", regs->rsp, regs->rbp, regs->rsi, regs->rdi);
+   	printf("\x1B[37;1mRIP: \x1B[0m0x%llx \x1B[37;1mCS:  \x1B[0m0x%llx \x1B[37;1mEFLAGS:\x1B[0m0x%llx\n",       regs->rip, regs->cs, regs->eflags);
+   	printf("\x1B[37;1mSS:  \x1B[0m0x%llx \x1B[37;1mDS:  \x1B[0m0x%llx \x1B[37;1mES:  \x1B[0m0x%llx \x1B[37;1mFS:  \x1B[0m0x%llx \x1B[37;1mGS:  \x1B[0m0x%llx\n",regs->ss, regs->ds, regs->es, regs->fs, regs->gs);
 
 	printf("\n\x1B[37;1mPrint Stack:\x1B[0m\n\n");
 	long long value = 0;
@@ -173,9 +173,9 @@ void print_memory(pid_t pid){
 	//printf("%s", path);
 	fp = fopen(path, "r");
 	if (fp) {
-			while ((c = getc(fp)) != EOF)
-					putchar(c);
-			fclose(fp);
+		while ((c = getc(fp)) != EOF)
+			putchar(c);
+		fclose(fp);
 	}
 }
 
