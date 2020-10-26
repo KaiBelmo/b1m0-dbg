@@ -9,3 +9,5 @@
 - [ ] info pid
 - [ ] hex dump
 - [ ] no idea
+
+(not stable && underdevelopment)
