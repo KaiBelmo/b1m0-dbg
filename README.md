@@ -1,3 +1,4 @@
+#### Features
 - [x] elf file parser
 - [x] trace syscalls
 - [x] step until syscalls
@@ -5,9 +6,6 @@
 - [x] info registers
 - [x] info memory
 - [x] set breakpoints
-- [ ] set registers 
-- [ ] info pid
-- [ ] hex dump
-- [ ] no idea
-
-(not stable && underdevelopment)
+- [x] underdevelopment
+- [x] not stable
+- [ ] no idea...
