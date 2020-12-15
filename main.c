@@ -1,6 +1,3 @@
-/*
-        Spaghetti code!
-*/
 
 #include "breakpoint.h"
 #include "dbg.h"
@@ -102,7 +99,7 @@ int main(int argc, char **argv) {
                     set_breakpoint_at_address(proc->pid, break_address, &breakpoint_list);
                     break;
                 case 9:
-					print_breakpoint_list(breakpoint_list);
+		    print_breakpoint_list(breakpoint_list);
                     break;
                 case 10:
                     print_memory(proc->pid);
