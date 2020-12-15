@@ -5,8 +5,5 @@
 - [x] single step
 - [x] info registers
 - [x] info memory
-- [x] set breakpoints
------------------------
-- [x] underdevelopment
-- [x] not stable
+- [x] set breakpoints (not stable)
 - [ ] no idea...
