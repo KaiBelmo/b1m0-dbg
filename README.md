@@ -9,4 +9,4 @@
 - [ ] no idea...
 
 #### Commands:
-- check (wiki)[https://github.com/CollinBelmo/b1m0-dbg/wiki] section
+- check [wiki](https://github.com/CollinBelmo/b1m0-dbg/wiki) section
