@@ -110,8 +110,5 @@ int main(int argc, char **argv) {
         }
     } 
 EXIT:
-    free(breakpoint_list);
-    free(proc);
-    free(commandline_list);
     return 0;
 }
