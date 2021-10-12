@@ -2,7 +2,8 @@
 Linux (debugger, syscall tracer, elf parser) for x86_64, I code it from scratch for educational purpose.
 
 #### <strong> Features </strong> 
- - 
+
+  
 <details>
   <summary><strong>Parsing Elf File</strong></summary>
   
@@ -12,7 +13,7 @@ Linux (debugger, syscall tracer, elf parser) for x86_64, I code it from scratch 
 </details>
 
 
- - 
+  
 <details>
   <summary><strong>Tracing syscalls</strong></summary>
   
@@ -22,7 +23,7 @@ Linux (debugger, syscall tracer, elf parser) for x86_64, I code it from scratch 
 </details>
  
  
- - 
+  
 <details>
   <summary><strong>Check executable security mitigation</strong></summary>
   
@@ -33,7 +34,7 @@ Linux (debugger, syscall tracer, elf parser) for x86_64, I code it from scratch 
 </details>
 
 
- - 
+ 
 <details>
   <summary><strong>Stepping</strong></summary>
   
@@ -44,7 +45,7 @@ Linux (debugger, syscall tracer, elf parser) for x86_64, I code it from scratch 
 </details>
 
 
- - 
+  
 <details>
   <summary><strong>Get/Set Registers</strong></summary>
   
@@ -53,9 +54,14 @@ Linux (debugger, syscall tracer, elf parser) for x86_64, I code it from scratch 
 </details>
 
 
- * <strong> Breakpoints </strong>
+<details>
+  <summary><strong>Breakpoints</strong></summary>
+  
+  * Set breakpoints.
+  * list all breakpoint.
+</details>
  
- - 
+  
 <details>
   <summary><strong>Process information</strong></summary>
   
