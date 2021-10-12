@@ -12,8 +12,7 @@ Linux (debugger, syscall tracer, elf parser) for x86_64, I code it from scratch 
 </details>
 
 
- - 
-<details>
+ - <details>
   <summary><strong>Tracing syscalls</strong></summary>
   
   * Trace syscalls (like strace).
@@ -22,8 +21,7 @@ Linux (debugger, syscall tracer, elf parser) for x86_64, I code it from scratch 
 </details>
  
  
- - 
-<details>
+ - <details>
   <summary><strong>Check executable security mitigation</strong></summary>
   
   * RELRO.
@@ -33,8 +31,7 @@ Linux (debugger, syscall tracer, elf parser) for x86_64, I code it from scratch 
 </details>
 
 
- - 
-<details>
+ - <details>
   <summary><strong>Stepping</strong></summary>
   
   * Single step - step over function calls.
@@ -44,8 +41,7 @@ Linux (debugger, syscall tracer, elf parser) for x86_64, I code it from scratch 
 </details>
 
 
- - 
-<details>
+ - <details>
   <summary><strong>Get/Set Registers</strong></summary>
   
   * Dump all registers.
@@ -55,8 +51,7 @@ Linux (debugger, syscall tracer, elf parser) for x86_64, I code it from scratch 
 
  * <strong> Breakpoints </strong>
  
- - 
-<details>
+ - <details>
   <summary><strong>Process information</strong></summary>
   
   * Show the original command line of the process.
