@@ -74,3 +74,4 @@ Check wiki page for all commands.
 #### <strong> Dependencies </strong>
  * [GNU Readline Library](https://tiswww.case.edu/php/chet/readline/rltop.html)
  
+***note*** *While I'm trying to code an elf parser, I discovered an anti-debug technique on gdb. [POC](https://twitter.com/belmo01/status/1433197860288442372)*
